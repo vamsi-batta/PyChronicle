@@ -31,3 +31,13 @@ python main.py
 Variable: x
 Line: 1
 ----------------
+
+## Week 2 Progress
+
+### Features Implemented
+
+- Execution tracing using `sys.settrace()`
+- Variable state tracking
+- SQLite database integration
+- Database record viewer
+- Basic Textual UI
