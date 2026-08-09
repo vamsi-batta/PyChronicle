@@ -32,6 +32,7 @@ if not history:
 
 else:
     print("History of", variable_name, ":")
+    print("--------------------------")
 
     previous_value = None
 
@@ -39,13 +40,8 @@ else:
 
         if previous_value != value:
 
-            print(
-                "Line",
-                line_number,
-                ":",
-                previous_value,
-                "->",
-                value
-            )
+            print()
+            print("Line", line_number)
+            print(previous_value, "->", value)
 
         previous_value = value
