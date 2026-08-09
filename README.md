@@ -41,3 +41,41 @@ Line: 1
 - SQLite database integration
 - Database record viewer
 - Basic Textual UI
+## Week 3 Progress
+
+### Delta Compression
+
+- Detects variable value changes
+- Stores only changed variables
+- Tracks old and new values
+- Avoids storing unchanged values
+
+### SQLite Delta Storage
+
+- Stores variable changes in `pychronicle.db`
+- Saves timestamp for each change
+- Saves variable name and value
+- Saves line number
+
+### Time-Scrubbing
+
+- Reads variable history from SQLite
+- Reconstructs variable state at a specific line
+- Supports interactive line selection
+- Displays the state of variables at the selected line
+
+### Week 3 Files
+
+- `delta_tracer.py` - Delta compression and SQLite storage
+- `history_reader.py` - History reading and state reconstruction
+- `pychronicle.db` - SQLite database containing variable history
+
+### Week 3 Status
+
+- Delta Compression ✅
+- SQLite Storage ✅
+- Timestamp Tracking ✅
+- Line Number Tracking ✅
+- History Reader ✅
+- State Reconstruction ✅
+- Interactive Time-Scrubbing ✅
